@@ -18,13 +18,19 @@ h1 {
 }
 
 /* //////// HEADER //////// */
-header {
+#header-section {
     display: flex;
     flex-direction: column;
-    background-image: url(./img/tayrona-portrait1.JPG);
-    background-repeat: none;
-    background-position: center;
-    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+#header .background {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+#header .container {
+    position: relative;
 }
 header nav {
     display: flex;

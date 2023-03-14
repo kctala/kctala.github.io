@@ -14,7 +14,7 @@
     <div id="header-section">
         <img class="background" src="./img/tayrona-portrait1.JPG" alt="">
         <div class="container">
-            <nav>
+            <nav id="nav">
                 <div id="name"><a href="#header">Kate Crowgey</a></div>
                 <div>
                     <ul class="menu">
@@ -28,9 +28,11 @@
             </nav>
             <div id="intro">
                 <img src="./img/Kate01-square.jpg" alt="Kate Crowgey Headshot">
-                <h1>Kate Crowgey</h1>
-                <h2>Front-End Web Developer - Yogi - Physical Therapist</h2>
-                <button id="visit"><a href="#portfolio">Visit My Portfolio</a></button>
+                <div class="content">
+                    <h1>Kate Crowgey</h1>
+                    <h2>Web Developer - Yogi - Physical Therapist</h2>
+                    <button id="visit"><a href="#portfolio">Visit My Portfolio</a></button>
+                </div>
             </div>
         </div>
     </div>
@@ -39,7 +41,7 @@
     <section id="about">
     <div id="about-section">
         <div id="photos">
-            <div><img src="./img/Kate-NYC.JPG" alt="Kate Crowgey Headshot 2" class="headshot"></div>
+            <div><img src="./img/Kate-Medellin.JPG" alt="Kate Crowgey Headshot 2" class="headshot"></div>
             <div class="icon-container">
                 <a href="https://www.linkedin.com/in/kate-crowgey-76211919/"><img src="./img/logo-linkedin.png" alt="LinkedIn" class="icon"></a>
                 <a href="https://github.com/kctala"><img src="./img/logo-github.png" alt="GitHub" class="icon"></a>
@@ -47,8 +49,11 @@
         </div>
         <div id="about-me">
             <h1>About Me</h1>
-            <h3>Web Developer - Yogi - Doctor of Physical Therapy</h3>
-            <p>Hi! My name is Kate Crowgey, and I am a front-end web developer. My journey into web development was non-linear. After years of working as a physical therapist, I learned that I was </p>
+            <h3>Front-End Web Developer - Yogi - Doctor of Physical Therapy</h3>
+            <p>Hi there! My name is Kate Crowgey, and I am a front-end web developer, a yogi, and a physical therapist. You might be thinking, "Wow! What an eclectic combination!" I happen to agree. My journey into web development has been non-linear to say the least.</p>
+            <p>After college, I worked for a start-up company called Evolent Health as their SharePoint Editor-in-Chief. While I loved my job, my path into physical therapy was already well underway. I went on to earn my doctorate in physical therapy, and later earned a specialization in outpatient orthopedics.</p>
+            <p>However, as a physical therapist, I felt something was missing. A part of me longed for the creativity and problem-solving that I used as a SharePoint Designer. In my spare time I began to play again with web design, and I immediately rediscovered my passion. I quit my job, and traveled around South America while studying web development.</p>
+            <p>Additionally, I have been a dedicated student and teacher of Kripalu yoga since 2012. If you're curious to learn more, please feel free visit <a href="http://www.katecrowgey.com/">my website</a>.</p>
         </div>
     </div>
     </section>
@@ -97,7 +102,27 @@
             <h1>Personal Projects</h1>
         </div>
         <div class="projects">
-            <p>projects will be added soon...</p>
+            <div class="project-icon">
+                <a href="https://github.com/kctala/TalaMeditation"><img id="project-img1" onmouseover="setNewImage1()" onmouseout="setOldImage1()" src="./img/project-talaMindfulness.png" alt="Tala Mindfulness"></a>
+                <div class="description">
+                    <h2>Tala Mindfulness</h2>
+                    <h4>HTML & CSS with responsive design</h4>
+                </div>
+            </div>
+            <div class="project-icon">
+                <a href="https://github.com/kctala/MeridianDogTraining"><img id="project-img2" onmouseover="setNewImage2()" onmouseout="setOldImage2()" src="./img/project-MeridianDogTraining.png" alt="Meridian Dog Training"></a>
+                <div class="description">
+                    <h2>Meridian Dog Training</h2>
+                    <h4>HTML & CSS with responsive design</h4>
+                </div>
+            </div>
+            <div class="project-icon">
+                <a href="https://github.com/kctala/forestDesign"><img id="project-img3" onmouseover="setNewImage3()" onmouseout="setOldImage3()" src="./img/project-ForestDesigns.png" alt="Forest Design"></a>
+                <div class="description">
+                    <h2>Forest Design</h2>
+                    <h4>HTML & CSS with responsive design</h4>
+                </div>
+            </div>
         </div>
         <button><a href="https://github.com/kctala">Visit my GitHub</a></button>
     </div>
@@ -128,5 +153,7 @@
 
     <footer></footer>
     
+    <script src="./main.js"></script>
+
 </body>
 </html>

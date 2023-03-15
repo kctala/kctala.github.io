@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kate's Portfolio</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -124,7 +125,7 @@
                 </div>
             </div>
         </div>
-        <button><a href="https://github.com/kctala">Visit my GitHub</a></button>
+        <button><a href="https://github.com/kctala">Visit my GitHub for More</a></button>
     </div>
     </section>
 
@@ -141,12 +142,29 @@
 
     <section id="contact">
     <div id="contact-section">
-        <div class="title">
-            <h1>Contact Me</h1>
-        </div>
-        <div class="content">
-            <h3>Email: katecrowgey@gmail.com</h3>
-            <h3>Phone: +1 828-338-8452</h3>
+        <img class="background" src="./img/background_icecreamglacier-crop.jpg" alt="Landscape">
+        <div class="container">
+            <div class="title">
+                <h1>Contact Me</h1>
+            </div>
+            <div class="content">
+                <h3>Email: <a href="mailto:katecrowgey@gmail.com">katecrowgey@gmail.com</a> | Phone: +1 828-338-8452</h3>
+            </div>
+            <form action="mailto:katecrowgey@gmail.com" method="post">
+                <label for="name">Name *:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email *:</label>
+                <input type="email" name="email" id="email" required>
+                <br>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" minlength="9" maxlength="14">
+                <br>
+                <label for="message">Message *:</label>
+                <textarea name="message" id="message" rows="5" cols="50" placeholder="White your inquiry here..." required></textarea>
+                <br><br>
+                <input type="submit" name="submit" id="submit" value="Submit">
+            </form>
         </div>
     </div>
     </section>

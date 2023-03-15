@@ -122,9 +122,32 @@ header #intro button a:hover {
     font-size: 1.2em;
 }
 
-@media only screen and (max-width: 480px) {
-    #nav {
-        display: none;
+@media only screen and (max-width: 768px) {
+    header nav {
+        height: 6em;
+        padding: 0 5em;
+    }
+    header #intro {
+        padding: 2em 0;
+        margin: 7em 0 5em 0;
+        width: 60%;
+        margin-left: 20%;
+    }
+    header #intro img {
+        max-width: 200px;
+    }
+    header #intro h1 {
+        font-size: 2.5em;
+        margin: 0.2em 0 0 0;
+    }
+    header #intro h2 {
+        font-size: 1.2em;
+    }
+    header #intro button {
+        margin-top: 1em;
+        padding: 0.8em;
+        font-size: 0.9em;
+        border-radius: 0.8em;
     }
 }
 
@@ -177,6 +200,24 @@ header #intro button a:hover {
 }
 #about #about-me a:hover {
     color: whitesmoke;
+}
+
+@media only screen and (max-width: 768px) {
+    #about-section {
+        margin: 3em;
+    }
+    #about #photos .headshot {
+        max-width: 200px;
+    }
+    #about #photos .icon {
+        max-width: 50px;
+        padding: 1em;
+        border-radius: 50%;
+    }
+    #about #about-me {
+        padding-left: 2em;
+        max-width: 40em;
+    }
 }
 
 
@@ -262,6 +303,24 @@ header #intro button a:hover {
     font-size: 1.2em;
 }
 
+@media only screen and (max-width: 768px) {
+    #portfolio-section {
+        margin: 3em 1em 3em 1em;
+    }
+    #portfolio .project-icon {
+        padding: 0.7em;
+        margin: 0.5em;
+    }
+    #portfolio button {
+        background-color:#2C5D7C;
+        margin-top: 2em;
+        padding: 1em;
+        font-size: 1em;
+        border: none;
+        border-radius: 0.7em;
+    }
+}
+
 /* //////// TIMELINE //////// */
 #timeline {
     background-color: #99C0E4;
@@ -275,6 +334,7 @@ header #intro button a:hover {
 
 /* //////// CONTACT //////// */
 #contact-section {
+    background-color: whitesmoke;
     color: white;
     position: relative;
     overflow: hidden;

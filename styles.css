@@ -197,6 +197,7 @@ header #intro button a:hover {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+
 }
 #skills-section .list {
     margin: 0.5em;
@@ -204,7 +205,7 @@ header #intro button a:hover {
     background-color: white;
     border-radius: 0.2em;
     text-align: center;
-    width: 7em;
+    flex: 1 1 5em;
 }
 #skills-section .skills-list .list img {
     height: 3em;
@@ -222,6 +223,8 @@ header #intro button a:hover {
 }
 #portfolio .projects {
     display: flex;
+    justify-content: center;
+    width: 100%;
 }
 #portfolio .project-icon {
     padding: 1em;
@@ -229,14 +232,9 @@ header #intro button a:hover {
     background-color: white;
     border-radius: 0.4em;
 }
-/* #portfolio .project-icon .description {
-    display: none;
-    background-color: #1F4A63;
-    color: whitesmoke;
-    text-align: center;
-} */
 #portfolio .project-icon img {
     border-radius: 0.25em;
+    width: 100%;
 }
 #portfolio button {
     background-color:#2C5D7C;
@@ -328,4 +326,12 @@ header #intro button a:hover {
 #contact input[type=submit]:hover {
     background-color: #99C0E4;
     font-weight: 600;
+}
+
+/* //////// FOOTER //////// */
+footer {
+    background-color: whitesmoke;
+}
+footer h4 {
+    text-align: center;
 }

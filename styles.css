@@ -42,14 +42,14 @@ header nav {
     width: 100%;
     box-sizing: border-box;
 }
-header #name {
+header #nav #name {
     font-size: 1.5em;
 }
-header #name a {
+header #nav #name a {
     text-decoration: none;
     color: #2D281D;
 }
-header #name a:hover {
+header #nav #name a:hover {
     font-weight: 500;
 }
 header ul {
@@ -70,6 +70,62 @@ header li a:hover {
 header li a:active {
     color: whitesmoke;
 }
+/*/// MOBILE ///*/
+header #mobile {
+    display: none;
+    padding: 0 2em;
+}
+header #mobile #name a {
+    color: #2D281D;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+header #mobile #name a:click {
+    font-weight: 500;
+}
+header #mobile .dropbtn {
+    background-color: #99C0E4;
+    color: #2D281D;
+    padding: 0.6em;
+    font-size: 1em;
+    border: none;
+    border-radius: 0.8em;
+    cursor: pointer;
+    width: 5em;
+}
+header #mobile .dropbtn:hover .dropbtn:focus {
+    color: whitesmoke;
+}
+header #mobile .dropdown {
+    display: inline-block;
+    position: relative;
+}
+header #mobile .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #99C0E4;
+    border-radius: 0.8em;
+    min-width: 6em;
+    z-index: 1;
+}
+header #mobile .dropdown-content a {
+    color: #2D281D;
+    padding: 0.7em 1em;
+    text-decoration: none;
+    display: block;
+}
+header #mobile .dropdown-content a:hover {
+    color: #2D281D;
+    font-weight: 600;
+}
+header #mobile .dropdown-content a:click {
+    font-weight: 600;
+}
+header #mobile .show {
+    display: block;
+}
+
+/*/// INTRO ///*/
 header #intro {
     display: flex;
     flex-direction: column;
@@ -123,7 +179,7 @@ header #intro button a:hover {
 }
 
 @media only screen and (max-width: 768px) {
-    header nav {
+    header #nav {
         height: 6em;
         padding: 0 5em;
     }
@@ -148,6 +204,37 @@ header #intro button a:hover {
         padding: 0.8em;
         font-size: 0.9em;
         border-radius: 0.8em;
+    }
+}
+@media only screen and (max-width: 480px) {
+    header #nav {
+        display: none;
+    }
+    header #mobile {
+        display: flex;
+        height: 4.5em;
+    }
+    header #intro {
+        padding: 1em 0;
+        margin: 5em 0 1em 0;
+        background-color: #193e539e;
+        border-radius: 1em;
+        width: 88%;
+        margin-left: 6%;
+    }
+    header #intro img {
+        max-width: 100px;
+    }
+    header #intro h1 {
+        display: none;
+    }
+    header #intro h2 {
+        font-size: 1em;
+        padding: 0 2em;
+        line-height: 1.5;
+    }
+    header #intro button {
+        display: none;
     }
 }
 
@@ -351,6 +438,9 @@ header #intro button a:hover {
     flex-direction: column;
     align-items: center;
     margin: 3em;
+}
+#contact h1 {
+    margin-bottom: 0;
 }
 #contact .content {
     text-align: center;

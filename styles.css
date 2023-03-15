@@ -89,7 +89,7 @@ header #mobile .dropbtn {
     padding: 0.6em;
     font-size: 1em;
     border: none;
-    border-radius: 0.8em;
+    border-radius: 0.5em;
     cursor: pointer;
     width: 5em;
 }
@@ -104,7 +104,7 @@ header #mobile .dropdown-content {
     display: none;
     position: absolute;
     background-color: #99C0E4;
-    border-radius: 0.8em;
+    border-radius: 0.5em;
     min-width: 6em;
     z-index: 1;
 }
@@ -123,6 +123,10 @@ header #mobile .dropdown-content a:click {
 }
 header #mobile .show {
     display: block;
+}
+.scrolled {
+    background-color: whitesmoke;
+    height: 4em;
 }
 
 /*/// INTRO ///*/
@@ -272,7 +276,7 @@ header #intro button a:hover {
 }
 #about #about-me {
     padding-left: 4em;
-    max-width: 40em;
+    max-width: 43em;
 }
 #about #about-me h1 {
     text-align: center;
@@ -281,6 +285,18 @@ header #intro button a:hover {
 #about #about-me h3 {
     text-align: center;
     margin-bottom: 1em;
+}
+#about #about-me p {
+    text-align: justify;
+}
+#about #about-me #more-text {
+    display: none;
+}
+#about #about-me #read-more-btn {
+    font-size: 1em;
+    border: none;
+    background-color: transparent;
+    font
 }
 #about #about-me a {
     color: #2D281D;
@@ -306,6 +322,23 @@ header #intro button a:hover {
         max-width: 40em;
     }
 }
+@media only screen and (max-width: 480px) {
+    #about-section {
+        margin: 2em;
+    }
+    #about #photos {
+        display: none;
+    }
+    #about #about-me {
+        padding: 0;
+    }
+    #about #about-me h1 {
+        font-size: 1.5em;
+    }
+    #about #about-me h3 {
+        display: none;
+    }
+}
 
 
 /* //////// SKILLS //////// */
@@ -325,7 +358,6 @@ header #intro button a:hover {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-
 }
 #skills-section .list {
     margin: 0.5em;
@@ -337,6 +369,26 @@ header #intro button a:hover {
 }
 #skills-section .skills-list .list img {
     height: 3em;
+}
+
+@media only screen and (max-width: 480px) {
+    #skills-section {
+        margin: 2em;
+    }
+    #skills-section h1 {
+        font-size: 1.5em;
+    }
+    #skills-section .list h3 {
+        font-size: 1em;
+        margin: 0.5em;
+    }
+    #skills-section .list {
+        margin: 0.4em;
+        padding: 0.5em;
+    }
+    #skills-section .skills-list .list img {
+        height: 2em;
+    }
 }
 
 /* //////// PORTFOLIO //////// */
@@ -407,6 +459,25 @@ header #intro button a:hover {
         border-radius: 0.7em;
     }
 }
+@media only screen and (max-width: 480px) {
+    #portfolio-section {
+        margin: 2em;
+    }
+    #portfolio .projects {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #portfolio-section h1 {
+        font-size: 1.5em;
+    }
+    #portfolio button {
+        margin-top: 1.5em;
+        padding: 0.8em;
+        font-size: 0.9em;
+    }
+}
 
 /* //////// TIMELINE //////// */
 #timeline {
@@ -417,6 +488,9 @@ header #intro button a:hover {
     flex-direction: column;
     align-items: center;
     margin: 3em;
+}
+#timeline p {
+    text-align: center;
 }
 
 /* //////// CONTACT //////// */
@@ -476,6 +550,34 @@ header #intro button a:hover {
 #contact input[type=submit]:hover {
     background-color: #99C0E4;
     font-weight: 600;
+}
+
+@media only screen and (max-width: 480px) {
+    #contact .container {
+        margin: 2em;
+    }
+    #contact h1 {
+        font-size: 1.5em;
+    }
+    #contact h3 {
+        font-size: 1em;
+        line-height: 1.5;
+    }
+    #contact form {
+        padding: 0.5em 1em;
+    }
+    #contact input[type=text], input[type=email], input[type=tel], textarea {
+        padding: 0.3em;
+        margin: 0.2em 0 0.5em 0;
+        font-size: 0.9em;
+    }
+    #contact input[type=submit] {
+        padding: 0.8em 1em;
+        font-size: 1em;
+    }
+    #contact form {
+        display: none;
+    }
 }
 
 /* //////// FOOTER //////// */

@@ -1,4 +1,4 @@
-//////// CHANGE HEADER BACKGROUND ////////
+//////// CHANGE HEADER BACKGROUND - DESKTOP ////////
 let nav = document.querySelector('nav');
 
 window.addEventListener('scroll', function(event) {
@@ -10,6 +10,18 @@ window.addEventListener('scroll', function(event) {
     } else {
         nav.style.backgroundColor = 'transparent';
         nav.style.height = '10em';
+    }
+});
+
+//////// CHANGE HEADER BACKGROUND - MOBILE ////////
+let mobileNav = document.getElementById('mobile');
+
+window.addEventListener('scroll', function() {
+
+    if (window.scrollY >= 100) {
+        mobileNav.classList.add('scrolled');
+    } else {
+        mobileNav.classList.remove('scrolled');
     }
 });
 
@@ -30,6 +42,24 @@ window.onclick = function(event) {
         }
     }
 };
+
+//////// ABOUT ME - READ MORE ////////
+function readFunction() {
+    let dots = document.getElementById("dots");
+    let moreText = document.getElementById("more-text");
+    let btnText = document.getElementById("read-more-btn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
+
 
 //////// UPDATE PROJECT IMAGE WITH DESCRIPTION ////////
 function setNewImage1() {
